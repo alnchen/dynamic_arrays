@@ -10,7 +10,6 @@ def well_formed(str)
   left_chars = []
   lookup = { '(' => ')', '['=> ']', '{'=> '}' }
 
-
   str.chars.each do |char|
     if lookup.keys.include?(char)
       left_chars << char
